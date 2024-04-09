@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Allerta Stencil');
+
+*{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+    text-align: justify;
+}
+
+.spacer-height{
+    height: 60px;
+}
+
+.spacer-width{
+    width: 20px; 
+}
+
+
+
+/* - - - - - Navbar - - - - - - - */
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0) !important;
+  padding: 5px;
+  position: absolute; /* changed from fixed to absolute */
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+}
+
+.fixed-top {
+  transition: background-color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+  padding: 0 12px;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 0.8em; 
+  color: #ffffff !important;
+  text-decoration: none;
+  margin: 0 12px;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.nav-link-active, .navbar-nav .nav-link:hover {
+  opacity: 1 !important;
+  font-weight: bold;
+  color: #ed8611 !important; 
+  text-decoration: none; 
+  margin: 0 12px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.fixed-top.scrolled {
+  background-color: rgba(37, 37, 37, 0.9) !important;
+}
+
+/* - - - - - - - - - - - - - - - */
+
+
+
+/* - - - - - - Home - - - - - - */
+
+.home-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); 
+  color:#FFF;
+  text-align: center;
+  font-size: larger;
+}
+
+@media (min-width: 992px) {
+  .home-caption {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+  }
+}
+
+.container{
+  max-width: 1140px; 
+  padding-right: 10px; 
+  padding-left: 5px; 
+  margin-top: 5rem !important;
+}
+
+.container-fluid{
+  max-width: 1140px; 
+  padding-right: 10px; 
+  padding-left: 5px;
+}
+
+@media (min-width: 1400px) {
+  .container, .container-fluid {
+    max-width: 1320px; 
+  }
+}
+
+.content-section {
+  min-height: 400px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.extra-padding-section {
+  padding-top: 200px; 
+  padding-bottom: 200px; 
+}
+
+.extra-margin-button {
+  margin-top: 30px; 
+}
+
+.newsletter {
+  background-size: cover;
+  background-position: center;
+}
+
+.newsletter .form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter .form-control {
+  max-width: 25%;
+}
+
+/* - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - Texto - - - - - - */
+
+@media(max-width: 1900px) {
+  .Text
+  { 
+    font-size: smaller;
+    margin-left: 110px;
+    margin-top: 90px;
+  }
+}   
+
+.Title{
+    
+    font-family: 'Allerta Stencil';
+    text-align: center;
+    font-size:  xx-large;
+    font-weight: 1000;
+}
+
+.Text{
+    margin-top: 100px !important;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.Parrafo{
+  padding:100px 0px;
+  max-width:960px;
+  width:100%;
+  margin:auto;
+}
+
+
+.imgsInicio
+{
+  display: block;
+  margin: auto; 
+  max-width: 100%;
+  height: auto;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+/* - - - - - - - - Proposal - - - - - - - - */
+.proposal-section {
+  padding: 2rem 0;
+}
+
+.proposal-item {
+  background-color: #e0e0e0;
+  padding: 30px; 
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 200px; 
+}
+
+.proposal-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem; 
+  font-weight: bold; 
+}
+
+.proposal-description {
+  font-size: 1rem; 
+}
+
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.proposal-subheading {
+  font-size: 1.25em; 
+}
+
+.row + .row {
+  margin-top: 6rem; 
+}
+
+.proposal-image-wrapper {
+  margin-bottom: 3rem; 
+}
+
+.proposal-content-wrapper {
+  margin-bottom: 3rem; 
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+/* - - - - - - - - Sections - - - - - - - - */
+
+.header-image {
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.header-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-caption h1 {
+  color: #ffffff; 
+}
+
+.last-section {
+  background-size: cover;
+  background-position: center;
+  height: 70svh; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center; 
+}
+
+.last-section p {
+  font-size: 3em; 
+  color: #fff; 
+  padding: 1em; 
+  margin-left: 10%; 
+  margin-right: 10%; 
+  border-radius: 10px; 
+  display: inline-block; 
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - History - - - - - - - - */
+
+.history-subtitle {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.history-title {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.history-text {
+  margin-bottom: 1.5rem;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - About Us - - - - - - - - */
+
+.about-us-section {
+  padding: 2rem 0;
+}
+
+.about-us-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  text-align: center; 
+}
+
+.about-us-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: center; 
+}
+
+.team-section {
+  padding: 2rem 0;
+}
+
+.team-member-photo {
+  margin-bottom: 1.5rem;
+  width: 360px; 
+  height: 500px;
+  object-fit: cover;
+}
+
+
+.team-member-name {
+  font-size: 1.25rem; 
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.team-member-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555; 
+  margin-bottom: 1rem;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+footer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.476);
+  color: #000000;
+  padding-top: 1em; 
+}
