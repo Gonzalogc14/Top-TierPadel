@@ -210,19 +210,12 @@ body {
 }
 
 
-@media (min-width: 768px) {
-  .col-md-6 {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-
 .proposal-subheading {
   font-size: 1.25em; 
 }
 
 .row + .row {
-  margin-top: 6rem; 
+  margin-top: 3rem; 
 }
 
 .proposal-image-wrapper {
@@ -351,4 +344,79 @@ footer {
   background-color: rgba(255, 255, 255, 0.476);
   color: #000000;
   padding-top: 1em; 
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+@media (max-width: 768px) {
+  .home-image-container img {
+    min-height: 350px; /* Ajusta este valor según la altura deseada */
+  }
+  .col-md-6 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .last-section p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .last-section p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .last-section p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .history-title {
+    font-size: 1.75rem;
+    padding: 0 20px;
+  }
+  .history-subtitle {
+    font-size: 1.5rem;
+    padding: 0 20px;
+  }
+  .history-text, .Texto {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .history-title {
+    font-size: 1.5rem;
+    padding: 0 15px;
+  }
+  .history-subtitle {
+    font-size: 1.25rem;
+    padding: 0 15px;
+  }
+  .history-text, .Texto {
+    font-size: 0.95rem;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .history-title {
+    font-size: 1.25rem;
+    padding: 0 10px;
+  }
+  .history-subtitle {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+  .history-text, .Texto {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
 }
