@@ -7,15 +7,15 @@
 
 
 body {
-    text-align: justify;
+  text-align: justify;
 }
 
-.spacer-height{
-    height: 60px;
+.spacer-height {
+  height: 60px;
 }
 
-.spacer-width{
-    width: 20px; 
+.spacer-width {
+  width: 20px;
 }
 
 
@@ -25,7 +25,7 @@ body {
 .navbar {
   background-color: rgba(255, 255, 255, 0) !important;
   padding: 5px;
-  position: absolute; /* changed from fixed to absolute */
+  position: absolute;
   top: 0;
   width: 100%;
   transition: top 0.3s;
@@ -43,7 +43,7 @@ body {
 
 .nav-link {
   font-weight: bold;
-  font-size: 0.8em; 
+  font-size: 0.8em;
   color: #ffffff !important;
   text-decoration: none;
   margin: 0 12px;
@@ -51,12 +51,12 @@ body {
   align-items: center;
 }
 
-
-.nav-link-active, .navbar-nav .nav-link:hover {
+.nav-link-active,
+.navbar-nav .nav-link:hover {
   opacity: 1 !important;
   font-weight: bold;
-  color: #ed8611 !important; 
-  text-decoration: none; 
+  color: #ed8611 !important;
+  text-decoration: none;
   margin: 0 12px;
   display: inline-flex;
   align-items: center;
@@ -65,6 +65,80 @@ body {
 .fixed-top.scrolled {
   background-color: rgba(37, 37, 37, 0.9) !important;
 }
+
+.btn-contact-us {
+  background-color: rgba(128, 128, 128, 0.80);
+  color: #fff;
+  border: none;
+  padding: 16px 24px; 
+  margin-left: 25px; 
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 0.9em;
+}
+
+.btn-contact-us:hover {
+  background-color: rgba(128, 128, 128, 0.8);
+  color: #fff;
+}
+@media (max-width: 768px) {
+
+  .btn-contact-us {
+    display: none;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .nav-link {
+    text-align: center;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: #fff;
+    display: block;
+  }
+
+  .nav-link-active,
+  .nav-item .nav-link:hover,
+  .nav-item .nav-link:focus,
+  .nav-item .nav-link.active {
+    color: #ed8611;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: block;
+  }
+}
+
 
 /* - - - - - - - - - - - - - - - */
 
@@ -76,10 +150,10 @@ body {
   position: absolute;
   bottom: 10px;
   left: 50%;
-  transform: translateX(-50%); 
-  color:#FFF;
+  transform: translateX(-50%);
+  color: #FFF;
   text-align: center;
-  font-size:xx-large
+  font-size: xx-large
 }
 
 @media (min-width: 992px) {
@@ -90,27 +164,29 @@ body {
   }
 }
 
-.container{
-  max-width: 1140px; 
-  padding-right: 10px; 
-  padding-left: 5px; 
+.container {
+  max-width: 1140px;
+  padding-right: 10px;
+  padding-left: 5px;
   margin-top: 5rem !important;
 }
 
-.container-fluid{
-  max-width: 1140px; 
-  padding-right: 10px; 
+.container-fluid {
+  max-width: 1140px;
+  padding-right: 10px;
   padding-left: 5px;
 }
 
 @media (min-width: 1400px) {
-  .container, .container-fluid {
-    max-width: 1320px; 
+
+  .container,
+  .container-fluid {
+    max-width: 1320px;
   }
 }
 
 .content-section {
-  min-height: 400px; 
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,12 +194,12 @@ body {
 }
 
 .extra-padding-section {
-  padding-top: 200px; 
-  padding-bottom: 200px; 
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .extra-margin-button {
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 .newsletter {
@@ -143,51 +219,6 @@ body {
 /* - - - - - - - - - - - - - - - - */
 
 
-/* - - - - - - Texto - - - - - - */
-
-@media(max-width: 1900px) {
-  .Text
-  { 
-    font-size: smaller;
-    margin-left: 110px;
-    margin-top: 90px;
-  }
-}   
-
-.Title{
-    
-    font-family: 'Allerta Stencil';
-    text-align: center;
-    font-size:  xx-large;
-    font-weight: 1000;
-}
-
-.Text{
-    margin-top: 100px !important;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-
-.Parrafo{
-  padding:100px 0px;
-  max-width:960px;
-  width:100%;
-  margin:auto;
-}
-
-
-.imgsInicio
-{
-  display: block;
-  margin: auto; 
-  max-width: 100%;
-  height: auto;
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-
-
 /* - - - - - - - - Proposal - - - - - - - - */
 .proposal-section {
   padding: 2rem 0;
@@ -195,37 +226,37 @@ body {
 
 .proposal-item {
   background-color: #e0e0e0;
-  padding: 30px; 
+  padding: 30px;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-height: 200px; 
+  min-height: 200px;
 }
 
 .proposal-title {
   margin-bottom: 1rem;
-  font-size: 1.5rem; 
-  font-weight: bold; 
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .proposal-description {
-  font-size: 1rem; 
+  font-size: 1rem;
 }
 
 
 .proposal-subheading {
-  font-size: 1.25em; 
+  font-size: 1.25em;
 }
 
-.row + .row {
-  margin-top: 3rem; 
+.row+.row {
+  margin-top: 3rem;
 }
 
 .proposal-image-wrapper {
-  margin-bottom: 3rem; 
+  margin-bottom: 3rem;
 }
 
 .proposal-content-wrapper {
-  margin-bottom: 3rem; 
+  margin-bottom: 3rem;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -243,33 +274,34 @@ body {
 
 .header-caption {
   position: absolute;
-  top: 50%;
+  top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .header-caption h1 {
-  color: #ffffff; 
+  color: #ffffff;
+  font-size: 4em;
 }
 
 .last-section {
   background-size: cover;
   background-position: center;
-  height: 70svh; 
+  height: 70svh;
   display: flex;
   justify-content: center;
-  align-items: center; 
-  text-align: center; 
+  align-items: center;
+  text-align: center;
 }
 
 .last-section p {
-  font-size: 3em; 
-  color: #fff; 
-  padding: 1em; 
-  margin-left: 10%; 
-  margin-right: 10%; 
-  border-radius: 10px; 
-  display: inline-block; 
+  font-size: 3em;
+  color: #fff;
+  padding: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -305,13 +337,13 @@ body {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2.5rem;
-  text-align: center; 
+  text-align: center;
 }
 
 .about-us-text {
   font-size: 1.5rem;
   line-height: 1.6;
-  text-align: center; 
+  text-align: center;
 }
 
 .team-section {
@@ -320,14 +352,14 @@ body {
 
 .team-member-photo {
   margin-bottom: 1.5rem;
-  width: 360px; 
+  width: 360px;
   height: 500px;
   object-fit: cover;
 }
 
 
 .team-member-name {
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
@@ -335,7 +367,7 @@ body {
 .team-member-title {
   font-size: 1rem;
   font-weight: 600;
-  color: #555; 
+  color: #555;
   margin-bottom: 1rem;
 }
 
@@ -345,7 +377,7 @@ footer {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.476);
   color: #000000;
-  padding-top: 1em; 
+  padding-top: 1em;
 }
 
 
@@ -353,8 +385,9 @@ footer {
 
 @media (max-width: 768px) {
   .home-image-container img {
-    min-height: 350px; /* Ajusta este valor según la altura deseada */
+    min-height: 350px;
   }
+
   .col-md-6 {
     padding-right: 20px;
     padding-left: 20px;
@@ -378,16 +411,20 @@ footer {
     font-size: 16px;
   }
 }
+
 @media (max-width: 992px) {
   .history-title {
     font-size: 1.75rem;
     padding: 0 20px;
   }
+
   .history-subtitle {
     font-size: 1.5rem;
     padding: 0 20px;
   }
-  .history-text, .Texto {
+
+  .history-text,
+  .Texto {
     font-size: 1rem;
     padding: 0 20px;
   }
@@ -398,11 +435,14 @@ footer {
     font-size: 1.5rem;
     padding: 0 15px;
   }
+
   .history-subtitle {
     font-size: 1.25rem;
     padding: 0 15px;
   }
-  .history-text, .Texto {
+
+  .history-text,
+  .Texto {
     font-size: 0.95rem;
     padding: 0 15px;
   }
@@ -413,11 +453,14 @@ footer {
     font-size: 1.25rem;
     padding: 0 10px;
   }
+
   .history-subtitle {
     font-size: 1.1rem;
     padding: 0 10px;
   }
-  .history-text, .Texto {
+
+  .history-text,
+  .Texto {
     font-size: 0.9rem;
     padding: 0 10px;
   }
@@ -427,7 +470,7 @@ footer {
 /* - - - - - - - - - - -  -*/
 
 .Text {
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
 }
 
 .accordion {
