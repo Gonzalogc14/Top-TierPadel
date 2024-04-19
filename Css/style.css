@@ -77,17 +77,16 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   transition: background-color 0.3s, color 0.3s;
   font-size: 0.9em;
+  text-decoration: none !important;
 }
 
 .btn-contact-us:hover {
   background-color: rgba(128, 128, 128, 0.8);
   color: #fff;
+  transform: scale(1.1);
 }
-@media (max-width: 768px) {
 
-  .btn-contact-us {
-    display: none;
-  }
+@media (max-width: 768px) {
 
   .navbar-collapse {
     display: flex;
