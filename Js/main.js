@@ -1,11 +1,3 @@
-document.addEventListener("DOMContentLoaded", function(){
-    window.addEventListener('scroll', function() {
-      const navbar = document.querySelector('.navbar');
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-  });
-  
+    document.getElementById('contact-us-btn').addEventListener('click', function() {
+    window.location.href = 'info@easypadeluk.com';
+});
